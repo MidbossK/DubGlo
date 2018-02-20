@@ -1,10 +1,14 @@
 ====Stats and Growth====
+On character creation, player starts with all stats at 1. Starting stat cannot be above 5. 
+	10 MaxHP and MaxMP. Classes give starting bonuses.
+
 
 Upon level up:
 +1 Atk
 +1 Matk
 +1 stat point of choice
-+1 favored stat point randomly (pick 3 stats, the game will point one in one of the 3 randomly. Can also randomly put it into Luk. Luk cannot be chosen as a favored stat.)
++1 favored stat point randomly (pick 3 stats, the game will point one in one of the 3 randomly. 
+	Can also randomly put it into Luk. Luk cannot be chosen as a favored stat.)
 +3 HP
 +2 MP
 Max number of stat value is 20
@@ -20,7 +24,7 @@ Str -   Carry weight
 	   1 Str = 1 Damage + .2% chance to Stagger
 
 Dex -   Dodge
-	  1 Dex = increase in dodge distance
+	  1 Dex = increase in dodge chance
 	Run Speed
 	  1 Dex = 1 to movespeed baseline
 	Crafting
@@ -196,8 +200,19 @@ Anchor - 20 MP - Target Cannot run away for the rest of the fight, next attack i
 Purify - 8 MP - Cures all negative status effects. Triple MP price for breaking silence and curse.
 Resistance - 30 MP - Clear all status effects, and prevents them for 3 turns. (Including positive ones like shield or escape)
 
+Tiered Exp:
+When "rested" from either an Inn or other effects, the player will gain bonuses to their EXP gain for the next few fights.
 
-===Character Creation===
+Tier 0: Double Exp for next 5 kills. Buff runs out in 5 minutes.
+Tier 1: Double Exp for next 4 kills. Buff runs out in 5 minutes.
+Tier 2: Double Exp for next 3 kills. Buff runs out in 5 minutes.
+Tier 3: Double Exp for next 2 kills. Buff runs out in 5 minutes.
+
+===Classes===
+Leader = Increased movespeed by 1. Gain 2 extra Eff. Points for each skill on use for party.
+Defender = Increased chance to block by 25% - half effect for party
+Attacker = Increased chance to hit by 25% - half effect for party
+Support = Regens 2 HP and 1 MP after battle for self and party.
 
 The Knight - Defender
 +12 stat points
@@ -249,7 +264,7 @@ Never-ending torch - An ethereal ghost torch that never goes out. 7x7 cell view 
 Bent Spoon - +10 on rolls at the end of battles for loot
 Blessing of the Fates - +1 HP and +1 MP and +1 Luk for not dying that level. Maximum 20 stacks. Stops at level 20. Doesnt disappear after death.
 
-
+Future classes:
 
 Necromancer - Attacker
 Assassin - Attacker
