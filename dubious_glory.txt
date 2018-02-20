@@ -1,0 +1,269 @@
+====Stats and Growth====
+
+Upon level up:
++1 Atk
++1 Matk
++1 stat point of choice
++1 favored stat point randomly (pick 3 stats, the game will point one in one of the 3 randomly. Can also randomly put it into Luk. Luk cannot be chosen as a favored stat.)
++3 HP
++2 MP
+Max number of stat value is 20
+
+
+
+
+Str -   Carry weight
+	   Equip limit
+	Object Interaction Limit
+	   1 Str = 2 Weight unit
+	Bonus Atk Damage
+	   1 Str = 1 Damage + .2% chance to Stagger
+
+Dex -   Dodge
+	  1 Dex = increase in dodge distance
+	Run Speed
+	  1 Dex = 1 to movespeed baseline
+	Crafting
+	  1 Dex = 1 bonus unit to crafting
+	Equipment
+	  1 Dex = 1 bonus to exotic weapon options
+
+Vit - 	Total HP and MP
+	  1 Vit = 2 HP Max / 1 MP Max
+	Total time needed before Power Nap
+	  1 vit = 1 unit
+	HP Regen
+	  1 vit = 1 HP per tick while sitting unless "Fatigued"
+	  1 vit = 1 HP per bonus on potion
+
+Int -	Decreases level needed to learn a spell
+	   Spell Lvl = Base level + Int
+	Spell Damage increase
+	   Spell Amount = Int + Spell Level
+	Mana Pool size
+	   1 int = 2 mana
+
+Wis -	Total MP and MP Regeneration up
+	1 Wis = 1 MaxMP and .1 MP gained per tile moved
+	Effeciency Lv Up
+	1 Wis = 10% Effeciency (Using a skill gets you 10 Eff. Points. So each point of wisdom gives you 1 point extra)
+	Bonus EXP
+	1 Wis = 1 bonus EXP
+	Increase chance to hit
+	1 Wis = 1 Hit
+
+Cha -	Increase in NPC relations
+	1 Cha = 1% Cheaper when buying/ 1% better when selling
+	NPCs might give more/better information when breaking the threshold
+	1 Cha = 1 Point (NPC value's will be hidden)
+	Lower chance to encounter a random battle at low HP per point
+	1 Cha = 1 point of threat more or less per tick
+	1 Cha = 
+
+Luk -	Crit rate up
+	1 Luk = 1 Crit
+	Drop rate increase
+	1 Luk = 1% Larger Chance
+	Max range easy enemy chance
+
+====Equip spots====
+
+Helmet
+Body
+Weapon
+Off-hand
+Legs
+Ring 
+Neck
+
+====Side notes====
+
+If wearing a shield, block chance increases by type of shield. (-50% damage taken; half chance for magic)
+	Small - 25% chance (13%)
+	Medium - 50% chance (25%)
+	Large - 75% chance (38%)
+
+If using a 2H weapon, weight of the weapon = atk bonus numerically
+
+====Status effects====
+Most status effects in the game are power, situational abilities. They often require reagents or preperation time
+in order to make use of them. They often come with longer cooldown if no reagents are required.
+
+Types:
+Stagger (Physical) = 1 weight unit = 1% chance per - Chance enemy will be interrupted
+Burning - [INT / 3] = Fire Damage
+Chilled - Loss of [Base level / 2] agi
+Inprisoned - Cannot run away or use Tech's
+Poisoned - (x)damage + [base level/2]
+Blinded - Darkened screen
+Cursed - Next magic attack fails at a 50% chance
+Weakened - Physical Attacks do only 25% damage
+
+Numbered status effects:
+
+If you see a status effect with a number beside it, it increases the effect. Example:
+
+"Curse 2" = Next 2 attacks can possibly miss.
+
+====Menu System progression example====
+Attack
+Magic
+Item
+Run
+
+
+Attack  > Melee
+	> Technique
+		> ##### 
+		> @@@@@
+		> !!!!!
+
+Magic   > Spell @@@@
+		> Fire (Lv. #)
+		> Ice  (Lv. #)
+		> Wind (Lv. #)
+	> Double Up @@@@ (250% MP cost)
+		> Fire
+		> Ice
+		> Etc.
+
+Item 	> Use ####
+Run	> Safe escape (Normal roll)
+	> Turn tail (+10 to roll, next hit is critical from enemy if failed)
+
+
+====Physical skills "Techs"====
+
+Precision Strike - Auto-crit
+Violent Assault - 175% attack damage + 25% chance to crit
+Gathered Retaliation - Return 20% of damage taken since last used this battle
+Quick Attack - Always attack first + 75% damage + 10% chance to crit
+Cleave - AoE attack. [100% damage. Requires 2H weapon.]
+Armor Pierce - Ignore armor for attack for perfect damage [Requires pointy weapon]
+Shatter - 200% Damage + Instant kills fragile enemies who fails vitality check versus your strength [Blunt weapon only]
+Desperation - 150% damage + Always attacks first + 0MP cost [Must be below 15% max HP to use - next attack by enemy will crit]
+
+====Magic Skills "Spells"====
+
+-Every level of a skill gained, increases its MP cost by 1
+-Proficency base increases 10 points per use
+-Killing a monster gives its base level as proficency exp if a spell was used this battle
+Level 1 - 50
+Level 2 - 100
+Level 3 - 200
+Level 4 - 400
+Level 5 - 800
+Level 6 - 1600
+Level 7 - 3200
+Level 8 - 6400
+Level 9 - 12800
+Level 10 - 25600
+
+Tier 1 spell = Affects all enemies normally. Assume tier 1 unless otherwise stated.
+Tier 2 spell = -50 Hit chance roll on enemies. -100 on bosses. (Each level of the spell increases hit chance by 10)
+Tier 3 Spell = Cannot be used in battle
+
+(Element) Wave - 3MP - One time Magic attack - [Int + (2 x Skill Level)]. Crit chance increases by 2 per level
+	> Damage goes up 2 points per level
+	> Holy will heal allies/self
+	> Elemental Effect chance goes up +3 per level. Base roll + 20
+
+(Element) Excess - 7 MP - Causes elemental status effects for 1 turn + spell level. Hit chance goes up +5 per level. Base roll + 50.
+	> Holy will heal allies
+	
+(Element) Shield - 8 MP - Shields user from damage of type by numbered amount with side effect - Amount is [1 + INT] Lasts 4 turns.
+	(correct element halves shield damage taken, wrong element doubles shield hp)
+	> Fire = Burns attackers
+	> Ice = Chills attackers
+	> Wind = Binds attackers
+	> Earth = Poisons attackers
+	> Holy = Blinds attackers
+	> Dark = Curses attackers
+
+(Element) Storm - 10 MP - AoE dot damage. Each level increases the turns it is on the field
+	> Holy will heal allies
+	> Elemental effect goes up +3 per level. Base roll + 10.
+
+Invoke (Element) Weapon/Body - 15 MP - Change elemental properties to this element for the rest of the battle. (Tier 2 spell)	
+Recall - 2 MP - Recalls to last savepoint (Tier 3 spell)
+Escape - 10 MP - Force target to flee (Tier 2 spell)
+Teleport - 30 MP - Teleports to target city (Tier 3 spell)
+Hustle - 15 MP - Increases input actions by 1, +2 agi per level. Duration by level.
+Delay - 15 MP - Lowers input actions to 1, -2 agi per level. Duration by level.
+Stop - 20 MP - Stops time for the enemy for 1 turn (Tier 2 Spell) + 20 hit if the enemy is "Delay"-ed
+Break - 40 MP - Destroys the enemy outright (Tier 2 spell) +50 Hit if enemy is "Stop"-ed
+Anchor - 20 MP - Target Cannot run away for the rest of the fight, next attack is a miss. (Tier 2 spell)
+Purify - 8 MP - Cures all negative status effects. Triple MP price for breaking silence and curse.
+Resistance - 30 MP - Clear all status effects, and prevents them for 3 turns. (Including positive ones like shield or escape)
+
+
+===Character Creation===
+
+The Knight - Defender
++12 stat points
++2000 GP
+-Tier 3 EXP gain
+-Starts with "Family's Broadsword"
+
+The Mage - Attacker
++11 Stat points
++2500 GP
+-Tier 3 EXP gain
+-Starts with the spell "Wave"
+
+The Rogue - Attacker
++10 Stat points
++1200 GP
+-Tier 2 EXP
+-Starts with "Lockpick" and "Lucky Ring"
+
+The Priest - Support
++5 Stat points
++6000 GP
+-Tier 2 EXP
+-Starts with the spell "Shield"
+
+The Adventurer - Leader
++7 Stat points
++1000 GP
+-Tier 1 EXP
+-Starts with "Never-ending torch"
+
+The Prisoner - Attacker
++9 stat points
++50 GP
+-Tier 1 EXP
+-Starts with "Bent spoon"
+
+The Unlikely - Leader
++2 Stat points
++200 GP
+-Tier 0 EXP
+-Starts with "Blessing of the Fates"
+
+Starting Items:
+
+Family's Broadsword - 10 Atk
+Lucky Ring - +5 luck
+Never-ending torch - An ethereal ghost torch that never goes out. 7x7 cell view range.
+Bent Spoon - +10 on rolls at the end of battles for loot
+Blessing of the Fates - +1 HP and +1 MP and +1 Luk for not dying that level. Maximum 20 stacks. Stops at level 20. Doesnt disappear after death.
+
+
+
+Necromancer - Attacker
+Assassin - Attacker
+Druid - Attacker
+
+Shaman - Defender
+Paladin - Defender
+Monk - Defender
+
+Bard - Support
+Alchemist - Support
+Illusionist - Support
+Fortune-Teller - Support
+
+Warlord - Leader
+MagicKnight - Leader
+Summoner - Leader
