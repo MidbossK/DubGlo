@@ -17,7 +17,5 @@ with (object_player) {
 	if !(place_meeting(_targetX, _targetY, object_solid_collider)) {
 		x = _targetX;
 		y = _targetY;
-	} else {
-		show_message("YOU COLLIDE BOY");
 	}
 }
